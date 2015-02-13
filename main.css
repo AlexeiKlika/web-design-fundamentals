@@ -33,8 +33,6 @@ ul {
  */
 
 .news__more {
-  float: right;
-  font-size: .8em;
   color: #333;
   text-decoration: none;
 }
@@ -53,22 +51,21 @@ ul {
 }
 
 .header__inner {
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .header__logo {
-  height: 72px;
-  margin-right: 1em;
+  height: 2em;
+  margin-right: 0.5em;
   vertical-align: top;
   margin-top: 12px;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
+  font-size: 2em;
+  margin: 0.5em 0;
   display: inline-block;
   color: #212121;
 }
@@ -81,7 +78,6 @@ ul {
  */
 
 .nav {
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,12 +90,12 @@ ul {
 
 .nav__item {
   box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
+  display: block;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
+  padding: 12px;
   text-transform: uppercase;
+  border-bottom: 1px solid rgb(224,224,244);
 }
 
 .nav a {
@@ -121,7 +117,7 @@ ul {
 
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -140,8 +136,6 @@ main {
  */
 
 .hero {
-  float: left;
-  width: 480px;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
@@ -168,9 +162,6 @@ main {
  */
 
 .top-news {
-  float: right;
-  width: 320px;
-  height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
 }
@@ -183,13 +174,7 @@ main {
 }
 
 .top-news__item {
-  border-bottom: 1px solid #E0E0E0;
-  padding: 1em 0;
-  line-height: 19.2px;
-}
-
-.top-news__item:before {
-  content: "» ";
+  border-bottom: 1px solid #E0E0E0;  
 }
 
 .top-news__item:last-child {
@@ -199,6 +184,13 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  display: block;
+  padding: 1.2em 0;
+  line-height: 19.2px;
+}
+
+.top-news__item a:before {
+  content: "» ";
 }
 
 .top-news__item a:hover,
@@ -214,8 +206,6 @@ main {
  */
 
 .scores {
-  width: 480px;
-  float: left;
   padding-top: 1em;
 }
 
@@ -263,8 +253,6 @@ main {
  */
 
 .weather {
-  float: right;
-  width: 320px;
   padding: 1em;
 }
 
@@ -308,7 +296,7 @@ main {
 }
 
 .weather__next__image {
-  width: 100%;
+  max-width: 100%;
 }
 
 
